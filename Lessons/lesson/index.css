@@ -1,0 +1,102 @@
+.block{
+    margin: 20px 180px 0px;
+    width: 95%;
+    height: 600px;
+   
+}
+
+.bajin{
+    margin:0 10px;
+    border: 3px pink solid;
+    border-style: outset;
+    height: 90%;
+    width: 25%;
+    display: inline-block;
+}
+
+.ban{
+    float: left;
+}
+
+.bajin img{
+    margin: 10px 10px 1px 10px;
+    width: 95%;
+    height: 30%;
+    object-fit: cover; 
+    object-position: 30% 40%;
+}
+
+.textContent{
+    width: 90%;
+    height: 45%;
+    text-align:left; /* ashkhatum e block elementeri het, ev berum aj, dzakh, mejtegh*/
+    padding: 12px;
+}
+
+.textContent h1{
+
+    margin: 0;
+    font-size: 20px; /* hraman vore phokhum e texti tareri chaphe*/
+}
+
+.textContent p{
+    line-height: 1.5; /* phokhum e mijtoghajin heravorutyune*/
+    font-size: 16px;
+    
+}
+
+.textContent button{
+    display: block;
+    margin: left;
+    width: 140px;
+    height: 30px;
+    font-weight: 700; /*phokhum e tareri hastutyune*/
+    letter-spacing: 1px; /*tareri heravorutyun*/
+    word-spacing: 3px; /* bareri heravorutyun*/
+    font-size: 15px;
+    background: none; /*veracnum e hetevi fone*/
+    color: white;
+    background-color: black ;
+}
+.bajinCD{
+    margin: 5px;
+    border: 3px pink solid;
+    border-style: outset;
+    height: 90%;
+    width: 25%;
+    display: inline-block;
+}
+.bajinCD img{
+    margin: 10px 10px 1px 10px;
+    width: 95%;
+    height: 30%;
+    object-fit: cover; 
+    object-position: 30% 40%;
+}
+
+
+.bajinAV{
+    margin:20px 30px;
+    border: 3px pink solid;
+    border-style: outset;
+    height: 80%;
+    width: 23%;
+    padding: 12px;
+    display: inline-block;
+}
+.bajinAV img{
+    border: 1px solid;
+    margin: 5px 5px 1px 5px;
+    width: 27%;
+    height: 18%;
+    object-fit: cover; 
+    object-position: 40% 40%;
+}
+
+.textContentAV h1{
+    font-size: 20px;
+}
+
+
+
+       
