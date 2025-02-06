@@ -1,154 +1,95 @@
-var people = [
-    { name: "Արամ", age: 25, city: "Հայաստան", occupation: "Ծրագրավորող" },
-    { name: "Մարիամ", age: 32, city: "Գերմանիա", occupation: "Բժիշկ" },
-    { name: "Հրանտ", age: 35, city: "Վրաստան", occupation: "Մարզիչ" },
-    { name: "Լիլիթ", age: 30, city: "Հայաստան", occupation: "Դիզայներ" },
-    { name: "Անահիտ", age: 18, city: "Հայաստան", occupation: "Մասնագետ" },
-    { name: "Վահե", age: 23, city: "Իտալիա", occupation: "Մանկավարժ" },
-    { name: "Միքայել", age: 31, city: "Բելգիա", occupation: "Արտադրող" },
-    { name: "Աննա", age: 20, city: "Հայաստան", occupation: "Գրող" },
-    { name: "Սարգիս", age: 31, city: "ԱՄՆ", occupation: "Արտադրական ղեկավար" },
-    { name: "Սոնա", age: 25, city: "Իսպանիա", occupation: "Լրագրող" },
-    { name: "Դավիթ", age: 29, city: "Ֆրանսիա", occupation: "Իրավաբան" },
-    { name: "Նարինե", age: 21, city: "Հայաստան", occupation: "Մոդել" },
-    { name: "Ռուբեն", age: 38, city: "Լատվիա", occupation: "Հոգեբան" },
-    { name: "Տիգրան", age: 20, city: "Հոլանդիա", occupation: "Մենեջեր" },
-    { name: "Շուշան", age: 27, city: "Հայաստան", occupation: "Բիզնես մասնագետ" }
-];
-function f(a){
-    var t = 0;
-    for(var b = 0; b < a.length; b++){
-        var country = a[b];
-        if(country.city == "Հայաստան"){
-            var g = a[t];
-            a[t] = a[b]
-            a[b] = g;
-            t++;
-        }
+var data = [
+    {
+        image: "https://i.pinimg.com/736x/70/c8/f2/70c8f25be20477001af41cfbaf51345d.jpg",
+        header: "Welcome to the website",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat perspiciatis."
+    },
+    {
+      
+        image: "https://i.pinimg.com/736x/77/a5/db/77a5db66982750dd9bfbcc92c17619aa.jpg",
+        header: "Welcome to the website",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat perspiciatis."
+    },
+    {
+        image: "https://i.pinimg.com/736x/fd/f4/55/fdf455170894effc6f27b67230345add.jpg",
+        header: "Welcome to the website",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat perspiciatis."
+    },
+    {
+        image: "https://i.pinimg.com/736x/d5/59/74/d55974b2cb6a45d54b711fc53395fe0a.jpg",
+        header: "Welcome to the website",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat perspiciatis."
+    },
+    {
+        image: "https://i.pinimg.com/736x/fb/dd/67/fbdd674f0fe76535a25cc487f280f5cc.jpg",
+        header: "Welcome to the website",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat perspiciatis."
+    },
+    {
+        image: "https://i.pinimg.com/736x/7a/8f/87/7a8f874e87fadd8647c4e3e7bd124317.jpg",
+        header: "Welcome to the website",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto placeat perspiciatis."
     }
-    a.length = t;
-    console.log(a)
+]
+function creator(x){
+    var elem = document.querySelector(".main")
+    elem.innerHTML += `
+        <div class="item">
+            <img src="${x.image}">
+            <h1>${x.header}</h1>
+            <p>${x.desc}</p>
+        </div>`
 }
-f(people)
+// creator(obj)
+for(var obj of data){
+    creator(obj)
+};
 
+var cards = [
+   {
+    icon: "fa-solid fa-leaf",
+    header: "AWESOME ICONS",
+    desc: `Tempora praesentium modi possimus, aliquam earum corporis iusto 
+    sapiente consequuntur molestiae a deleniti et odit blanditiis iure 
+    nisi perspiciatis. Odio libero ullam perspiciatis magnam nesciunt officiis 
+    tempora repellendus unde quo Iste, quasi. Facilis atque error distinctio 
+    nostrum sequi eveniet Voluptates, animi. Quam.`,
+    handle: "READ MORE"
+   },
+   {
+    icon: "fa-solid fa-mobile-screen",
+    header: "AWESOME ICONS",
+    desc: `Tempora praesentium modi possimus, aliquam earum corporis iusto 
+    sapiente consequuntur molestiae a deleniti et odit blanditiis iure 
+    nisi perspiciatis. Odio libero ullam perspiciatis magnam nesciunt officiis 
+    tempora repellendus unde quo Iste, quasi. Facilis atque error distinctio 
+    nostrum sequi eveniet Voluptates, animi. Quam.`,
+    handle: "READ MORE"
+   },
+   {
+    icon: "fa-solid fa-car-battery",
+    header: "AWESOME ICONS",
+    desc: `Tempora praesentium modi possimus, aliquam earum corporis iusto 
+    sapiente consequuntur molestiae a deleniti et odit blanditiis iure 
+    nisi perspiciatis. Odio libero ullam perspiciatis magnam nesciunt officiis 
+    tempora repellendus unde quo Iste, quasi. Facilis atque error distinctio 
+    nostrum sequi eveniet Voluptates, animi. Quam.`,
+    handle: "READ MORE"
+   }
+]
 
-// function a(x, y){
-//     console.log(x ** y)
-// }
-// a (4, 2);
-// a (4, 10);
-
-
-// var obj1 = {
-//     name: "Karen",
-//     surname: "Xachatryan",
-//     age: "15",
-//     city: "Armenia",
-//     phone: "555-0101",
-//     email: "karen.x@example.com",
-//     postalCode: "001"
-//   };
-  
-//   var obj2 = {
-//     name: "Ani",
-//     surname: "Avagyan",
-//     age: "25",
-//     city: "Belgia",
-//     phone: "555-0102",
-//     email: "ani.a@example.com",
-//     postalCode: "002"
-//   };
-  
-//   var obj3 = {
-//     name: "Vahe",
-//     surname: "Hakobyan",
-//     age: "40",
-//     city: "Chicago",
-//     phone: "555-0103",
-//     email: "vahe.h@example.com",
-//     postalCode: "003"
-//   };
-  
-//   var obj4 = {
-//     name: "Arman",
-//     surname: "Davtyan",
-//     age: "17",
-//     city: "Armenia",
-//     phone: "555-0104",
-//     email: "arman.d@example.com",
-//     postalCode: "004"
-//   };
-  
-//   var obj5 = {
-//     name: "David",
-//     surname: "Vardanyan",
-//     age: "28",
-//     city: "London",
-//     phone: "555-0105",
-//     email: "david.v@example.com",
-//     postalCode: "005"
-//   };
-  
-//   var obj6 = {
-//     name: "Sahak",
-//     surname: "Martirosyan",
-//     age: "33",
-//     city: "Italy",
-//     phone: "555-0106",
-//     email: "sahak.m@example.com",
-//     postalCode: "006"
-//   };
-  
-//   var obj7 = {
-//     name: "Hayk",
-//     surname: "Avagyan",
-//     age: "45",
-//     city: "Hungary",
-//     phone: "555-0107",
-//     email: "hayk.a@example.com",
-//     postalCode: "007"
-//   };
-  
-//   var obj8 = {
-//     name: "Artur",
-//     surname: "Sahakyan",
-//     age: "29",
-//     city: "Germany",
-//     phone: "555-0108",
-//     email: "artur.s@example.com",
-//     postalCode: "008"
-//   };
-  
-//   var obj9 = {
-//     name: "Robert",
-//     surname: "Tovmasyan",
-//     age: "50",
-//     city: "Russia",
-//     phone: "555-0109",
-//     email: "robert.t@example.com",
-//     postalCode: "009"
-//   };
-  
-//   var obj10 = {
-//     name: "Laura",
-//     surname: "Grigoryan",
-//     age: "27",
-//     city: "France",
-//     phone: "555-0110",
-//     email: "laura.g@example.com",
-//     postalCode: "010"
-//   };
-
-//   var arr = [obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10];
-//  for (var a = 0; a < arr.length; a++) {
-//   document.write("<ul>");
-//   document.write("<li> Name: ", arr[a]["name"], "</li>");
-//   document.write("<li> Surname: ", arr[a]["surname"], "</li>");
-//   document.write("<li> Age: ", arr[a]["age"], "</li>");
-//   document.write("<li> City: ", arr[a]["city"], "</li>");
-//   document.write("<li> Phone: ", arr[a]["phone"], "</li>");
-//   document.write("<li> E-mail: ", arr[a]["email"], "</li>");
-//   document.write("<li> Postal code: ", arr[a]["postalCode"], "</li>");
-//   document.write("</ul>");
-// }
-
+function container(y){
+    var cardElement = document.querySelector(".main")
+    cardElement.innerHTML += `
+        <div class="itemArea">
+            <div class ="contentArea">
+                <i class="${y.icon}"></i>
+                <h1>${y.header}</h1>
+            </div>
+            <p>${y.desc}</p>
+            <button>${y.handle}</button>
+        </div>`
+}
+for(var obj of cards){
+    container(obj)
+}
