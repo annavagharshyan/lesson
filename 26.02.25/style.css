@@ -1,0 +1,22 @@
+.block{
+  width: 500px;
+  height: 400px;
+  border: 1px solid;
+  overflow: scroll;
+}
+
+.block1{
+  width: 500px;
+  height: 400px;
+  border: 1px solid;
+  overflow: scroll;
+}
+.button{
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  background: rgb(10, 61, 246);
+  color: rgb(255, 254, 254);
+  font-size: 30px;
+}
