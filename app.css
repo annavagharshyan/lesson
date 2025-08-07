@@ -1,0 +1,372 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url(https://i.pinimg.com/1200x/80/ef/97/80ef972771cefbf0fa77dcf594eb45b4.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+.block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.logo,
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav ul {
+  width: 50px;
+}
+.logo1 {
+  padding: 0 5px;
+}
+
+.logo i {
+  color: rgb(160, 2, 2);
+  font-size: 30px;
+}
+
+.logo1 i,
+span {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+/* .number ul {
+  padding: 0 500px;
+} */
+
+.block nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.block nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.block .auth a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Navbar-ին margin-top ավելացրինք՝ ֆիքսված մենյուի համար */
+.navbar {
+  width: 98%;
+  height: 60vh;
+  background: url(https://i.pinimg.com/1200x/bb/e5/ab/bbe5ab741df19470b3c9057c8d11834c.jpg);
+  align-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 120px auto 40px auto;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 10px rgba(203, 202, 202, 0.3);
+}
+
+.navbar h6 {
+  font-family: serif;
+  text-transform: capitalize;
+  font-size: 45px;
+  margin: 0 30px;
+  letter-spacing: 5px;
+  color: white;
+  font-weight: 100;
+}
+
+.navbar p {
+  font-family: serif;
+  text-transform: capitalize;
+  color: rgb(160, 2, 2);
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.lineDecor {
+  border: 1px solid white;
+  width: 32%;
+  margin: 5px auto;
+}
+
+.contentArea {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h3 {
+  font-family: serif;
+  text-transform: capitalize;
+  color: rgb(163, 2, 2);
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.content i {
+  font-size: 40px;
+}
+
+.content p {
+  font-size: 14px;
+}
+
+.o1 {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.l1 img {
+  box-shadow: 0 0 15px 5px rgba(203, 202, 202, 0.3);
+  margin: 30px auto;
+  width: 300px;
+  height: 210px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 30px;
+}
+
+.divider {
+  margin: 40px 0;
+  gap: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.divider-line {
+  width: 34%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.divider-diamond {
+  position: absolute;
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+}
+
+.decorArea {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 14px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.decor {
+  background-color: #fbfafa;
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+}
+
+.title {
+  font-family: serif;
+  text-transform: capitalize;
+  font-weight: 100;
+  font-size: 45px;
+  color: rgb(160, 2, 2);
+}
+
+.name,
+.discription {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 13px;
+  width: 50%;
+  margin: 0 auto;
+}
+/*տեղկ․*/
+.area {
+  gap: 90px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 200px;
+  background-color: black;
+  margin: 170px 0 0 0;
+}
+
+.k1 {
+  width: 30%;
+}
+
+.k1 p {
+  font-size: 14px;
+  color: #9f9e9e;
+}
+
+.k1 {
+  
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+  border-radius: 6px;
+}
+
+
+.area ul {
+  list-style: none;
+  padding: 0;
+}
+
+.area ul li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #9f9e9e;
+}
+
+.area h6 {
+  font-size: 17px;
+  color: white;
+  letter-spacing: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.block nav ul li a {
+  position: relative;
+  padding: 8px 9px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.footer {
+  background-color: black;
+  color: #fff;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid #333;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-left p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right p {
+ 
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.payment-logos img {
+  height: 30px;
+  margin-left: 8px;
+  border-radius: 5px;
+  background: white;
+  padding: 3px;
+}
+/*տեղկ․*/
+
+.block nav ul li a:hover {
+  background-color: rgba(160, 2, 2, 0.2); /* Թափանցիկ մուգ կարմիր ֆոն */
+  box-shadow: 0 0 10px rgba(160, 2, 2, 0.7);
+  border-radius: 20px;
+  color: rgb(160, 2, 2);
+}
+
+.order-container {
+  /* width: 1200px; */
+  width: 60%;
+  margin: 50px auto;
+  background-color: black;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 5px rgba(203, 202, 202, 0.3);
+  color: white;
+  text-align: center;
+}
+
+.order-container h2 {
+  color: rgb(160, 2, 2);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.order-form input,
+.order-form select,
+.order-form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.order-form button {
+  background-color: rgb(160, 2, 2);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  margin-top: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.order-form button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+
